@@ -88,7 +88,17 @@ html,body{
     height: 100%;
     background-color: white;
 }
-
+button {
+    font-size: 22px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
 #rightTop{ 
     display: flex;
     width: 100%;
@@ -152,7 +162,9 @@ html,body{
     background-position: center;
 }
 
-@media(max-width: 500px){
+
+
+@media only screen and (max-width: 500px){
     #main{
         flex-direction: column;
     }
@@ -163,5 +175,11 @@ html,body{
     #main #right{
         width: 100%;
     }
+    button {
+        font-size: 10px; 
+        padding: 8px 16px;
+        border-radius: 10px; 
+    }
 }
+
 
