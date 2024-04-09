@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+    
+    
+}                                               
+/*CSS code snippet ensures that all elements in the HTML document have no margin or padding by default*/
+                             
+html,body{
+    width: 100%;    /*it sets the box-sizing property to border-box to ensure consistent sizing calculations across different elements. This can be useful for achieving consistent layouts and spacing in web design.*/ 
+    height: 100%;  
+}
+
+#main{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#left{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    
+}
+
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+#lnavr{
+    display: flex;
+    align-items: center;  
+}
+
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.ri-linkedin-box-fill {
+    color: royalblue;
+}
+.ri-twitter-fill  {
+    color: royalblue;
+}
+
+
+#left #textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-40%);
+}
+
+#textcenter h1{
+    font-size: 95px;
+    font-weight: 600;
+}
+#textcenter p{
+    opacity: .6;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#textcenter a{
+    text-decoration: none;
+    color:#000;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .6;
+}
+#right{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+}
+
+#rightTop{ 
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: aqua;
+}
+
+#rightBottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://miro.medium.com/v2/resize:fit:1358/1*r8qThldC35UObp7kj53LZA.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+#rtopleft{
+    display: flex;
+    position: relative;
+    width: 55%;
+    height: 100%;
+   background-image:url(nike.png);
+   background-size: cover;
+   background-position: center;
+}
+
+#rtopleft a {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+    
+}
+#rtopright a {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+    
+}
+
+
+
+
+#rtopright{
+    display: flex;
+    position: relative;
+    width:45%;
+    height: 100%;
+    background-image: url(smoothies.png);
+    background-size: contain;
+    background-position: center;
+}
+
+@media(max-width: 500px){
+    #main{
+        flex-direction: column;
+    }
+
+    #main #left{
+        width: 100%;
+    }
+    #main #right{
+        width: 100%;
+    }
+}
+
